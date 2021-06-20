@@ -1,0 +1,173 @@
+body{
+	overflow-x:hidden;
+		
+}
+header{
+	
+	background: black;
+}
+.navbar-header img{
+	
+	width:65px;
+	height:65px;
+	
+}
+
+.navbar .nav-link{
+	color:white;
+	
+}
+.navbar .nav-link:hover{
+	color:#D83715;
+	
+}
+.nav-slider img{
+	width:100%;
+	height:400px;
+	object-fit:cover;	
+	
+} 
+.main-container{
+	width:250px;
+	height:200px;
+	position:relative;
+	background:#D83715;
+}
+.thecard{
+	position:absolute;
+	width:100%;
+	height:100%;
+	transform-style:preserve-3d;
+	transition:all 0.9s ease;
+	
+}
+.thecard:hover{
+	transform:rotateY(189deg);
+}
+.thefront{
+	position:absolute;
+	width:100%;
+	height:100%;
+	backface-visibility:hidden;
+	background:#D83715;
+	color:white;
+	
+}
+.backcard{
+	position:relative;
+	width:100%;
+	height:100%;
+	backface-visibility:hidden;
+	background:white;
+	transform:rotateY(180deg);
+	color:#D83715;
+	
+}
+.thefront .fa{
+	color:white;
+	
+}
+.hi-slide{
+	position:relative;
+	width:754px;
+	height:292px;
+	margin:115px auto 0;
+	
+}
+.hi-slide .hi-prev,
+.hi-slide .hi-next{
+	position:absolute;
+	top:50%;
+	width:40px;
+	height:40px;
+	margin-top:-20px;
+	border-radius:50px;
+	line-height:40px;
+	text-align:center;
+	cursor:pointer;
+	background-color:white;
+	color:black;
+	transition:all 0.7s;
+	font-size:20px;
+	font-weight:bold;
+	
+}
+
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover{
+	opacity:1;
+	background-color:white;
+	
+}
+.hi-slide .hi-prev{
+	left:-70px;
+}
+.hi-slide .hi-prev::before{
+	
+	content:'<';
+}
+.hi-slide .hi-next{
+	right:-70px;
+}
+.hi-slide .hi-next::before{
+	
+	content:'>';
+}
+.hi-slide>ul{
+	
+	list-style:none;
+	position:relative;
+	width:754px;
+	height:292px;
+	margin:0px;
+	padding:0px;
+}
+.hi-slide>ul>li{
+	
+	overflow:hidden;
+	position:absolute;
+	z-index:0;
+	left:377px;
+	width:0;
+	height:0;
+	margin:0;
+	padding:0px;
+	border:3px solid white;
+	background-color:#333;
+	cursor:pointer;
+}
+
+.hi-slide>ul>li>img{
+	
+	width:100%;
+	height:100%;
+	background-position:center;
+}
+.youtube-frame{
+	background:url('https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+	opacity:1;
+	background-size:100% 100%;
+	padding:90px 0px 90px 0px;
+	
+}
+footer{
+	background:black;
+	border-top:2px #D83715 solid;
+	padding-top:60px;
+	
+}
+footer .logo_style{
+	margin-left:10px;
+	width:70px;
+	height:65px;
+	
+}
+footer a ,nav  a,footer a:hover ,nav  a:hover{
+	color:white;
+}
+footer li> a:hover, nav li> a:hover{
+	color:#D83715;
+}
+footer >nav.btn{
+	width:100px;
+}
